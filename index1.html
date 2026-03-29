@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia de la Memoria y Justicia</title>
+</head>
+<body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body{
+            background-color: #363434b8;
+            font-family: Arial, sans-serif;
+        }
+        .cabecera{
+            display:flexbox;
+            justify-content: space-around;
+            align-items: center;
+            margin: 10px,20px,50px,20px;
+        
+        }
+        @media (max-width: 768px) {
+            .cabecera {
+                flex-direction: column;
+                align-items: center;
+            }
+            .cabecera li {
+                margin-bottom: 10px;
+                flex-direction: column;
+                align-items: center;
+                font-weight: 20px;
+            }
+            a {
+                box-shadow: #5c0404 6px 5px 15px 5px;
+                display: inline-block;  
+                transition: transform 0.4s ease;
+            }
+            a:hover {
+                box-shadow: #c314a0 3px 5px 10px 3px;
+                transform: scale(1.1);
+            }
+        }
+        .cabecera li{
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+        }
+        .cabecera ul{
+            list-style: none;
+            justify-content: center;
+            align-content: center;
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 40px;
+            font-style: bold;
+        }
+        a:hover{
+            box-shadow: #5c0404 6px 5px 15px 5px;
+        }
+        #logo{
+            width: 200px;
+            box-shadow: #511c1c 5px 10px 20px 5px
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+        h1{
+            text-align: center;
+            font-size: 70px;
+            color: rgba(0, 0, 0, 0.8);
+        }
+        #inicio{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        #inicio p{
+            width: 400px;
+            text-align: justify;
+            margin-left: 15px;
+        }
+        table {
+            width: 100%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #5c0404;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #c0971a;
+            color: rgb(50, 14, 14);
+        }
+        h2{
+            text-align: center;
+            font-size: 70px;
+            justify-content: center;
+            color: rgba(0, 0, 0, 0.864);
+            margin-top:50px;
+        }
+        #historis{
+            display: flex;
+            align-items: center;
+        }
+        @media (max-width: 768px) {
+            #historis {
+                flex-direction: column;
+                align-items: center;
+            }
+            #historis p {
+                width: 100%;
+                text-align: justify;
+                margin-bottom: 20px;
+            }
+        }
+
+        .foter{
+            width: 400px;
+            margin: 20px;
+        }
+        .pie{
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+    <div class="cabecera">
+        <li>
+            <ul><img id="logo" src="./imagenes/miliges.jpg" alt=""></ul>
+            <ul><a href="index1.html#incio">Memoria</a></ul>
+            <ul><a href="index1.html#tabla">Desaparecidos</a></ul>
+            <ul><a href="./index1.html#historis">Historia</a></ul>
+        </li>
+    </div>
+    <main>
+        <h1>Memoria Verdad y Justicia </h1>      
+          <div  id="inicio">
+                <span><img class="experimental" src="./imagenes/desaparecidos.jpg" alt="imagen desaparecidos";
+                     style="width:100%; cursor:pointer;"
+                     onclick="document.getElementById('modalImg').showModal()">
+                     <dialog id="modalImg"> <img src="./imagenes/desaparecidos.jpg" alt="imagen paisaje" 
+                        style="width: 500px;"><br><button onclick="document.getElementById('modalImg').close()">Cerrar</button></dialog>
+                </span>
+                       <span> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                         Veritatis, necessitatibus quisquam, possimus dolore sed dolorum quod, autem at commodi quaerat quidem.
+                          Odio facilis aspernatur magni reprehenderit! Corporis sapiente harum tenetur?</p></span></div>
+
+            </div>
+            <div id="tabla">
+                <table>
+                    <tr>
+                        <th>Año</th>
+                        <th>Nombre </th>
+                        <th>Provincia </th>
+                    </tr>
+                    <tr>
+                        <td>1976</td>
+                        <td>Juan Perez</td>
+                        <td>Buenos Aires</td>
+                    </tr>
+                    <tr>
+                        <td>1977</td>
+                        <td>Maria Gomez</td>
+                        <td>Córdoba</td>    
+                    </tr>
+                    <tr>
+                        <td>1978</td>
+                        <td>Carlos Rodriguez</td>
+                        <td>Santa Fe</td>
+                    </tr>
+
+                </table>
+
+            </div>
+                <h2>Historia</h2>
+            <div id="historis">
+                <span><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nulla voluptas ducimus voluptates repudiandae iste et perferendis libero ipsam dolore temporibus, ex nesciunt impedit nemo, non, reprehenderit fuga tenetur recusandae!</p></span>
+                <span><img class="foter" src="./imagenes/militares.jpg" alt="militares"></span>
+                <span><img class="foter" src="./imagenes/DhG3flRWkAUHnYe.jpg" alt=""></span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, necessitatibus quisquam, possimus dolore sed dolorum quod, autem at commodi quaerat quidem. Odio facilis aspernatur magni reprehenderit! Corporis sapiente harum tenetur?</p>
+            </div>
+
+
+    </main>
+    
+</body>
+<footer>
+<div class="pie">
+    <p>Copyright © 2026 Memoria Verdad y Justicia. Todos los derechos reservados. Clase Algoritmos 02.</p>
+</div>
+</footer>
+</html>
